@@ -189,6 +189,9 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+"""
+Provide option to view the first 5 rows of the raw data. Provide the option to continue seeing the next 5 rows"""
+
 #got help from the following knowledge board answer: https://knowledge.udacity.com/questions/26261 &
 # website: https://www.dataquest.io/blog/pandas-python-tutorial/
     input_data = input('\nWould you like to see the first 5 rows of the file? Please enter yes or no:').lower()
