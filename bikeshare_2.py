@@ -126,8 +126,8 @@ def station_stats(df):
     # I got help from https://www.reddit.com/r/learnpython/comments/7s99rk/pandas_sort_by_most_frequent_value_combinations/
     start_end_station = df.groupby(['Start Station', 'End Station']).size().idxmax()
     print('Most frequent combination of start and end station trip:', start_end_station)
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print("\nThis took %s seconds." % (time.time() - start_time) + '-'*40)
+    #print('-'*40)
 
 
 def trip_duration_stats(df):
@@ -142,7 +142,7 @@ def trip_duration_stats(df):
     # display mean travel time
     mean_duration = df['Trip Duration'].mean()
     print('Average travel time for your trip:', mean_duration)
-    print("\nThis took %s seconds." % (time.time() - start_time)) + '-'*40)
+    print("\nThis took %s seconds." % (time.time() - start_time) + '-'*40)
     #print('-'*40)
 
 
