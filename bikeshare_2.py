@@ -157,6 +157,7 @@ def user_stats(df):
     print(user_types)
 
     #the following knowledge board messaged helped me with the below: https://knowledge.udacity.com/questions/55524
+""" The below code will request an input from the user and will output the gender count """
 
     if "Gender" in df.columns:
         user_gender = df['Gender'].value_counts()
